@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Container, VStack, Heading } from "@chakra-ui/react";
+import Footer from "../components/Footer";
 import AddTodo from "../components/AddTodo";
 import TodoList from "../components/TodoList";
 
@@ -36,6 +37,7 @@ const Index = () => {
         <AddTodo addTodo={addTodo} />
         <TodoList todos={todos} toggleComplete={toggleComplete} removeTodo={removeTodo} />
       </VStack>
+      <Footer />
     </Container>
   );
 };
